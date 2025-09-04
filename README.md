@@ -1,12 +1,19 @@
-# React + Vite
+# Projeto Desafio Técnico
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o código para o **Desafio Técnico de Gestão de Projetos**. O objetivo deste desafio é implementar funcionalidades que permitam o gerenciamento eficiente de projetos, com foco na organização e controle das tarefas.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Antes de rodar o projeto, verifique se você possui as seguintes ferramentas instaladas:
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (versão recomendada: 16.x ou superior)
+- [npm](https://www.npmjs.com/) (gerenciador de pacotes do Node.js)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Como rodar o projeto
+
+### Passo 1: Clone o repositório
+
+Primeiro, clone este repositório para sua máquina local:
+
+```bash
+git clone https://github.com/seu-usuario/projeto-desafio-tecnico.git
