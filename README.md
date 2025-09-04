@@ -16,4 +16,4 @@ Antes de rodar o projeto, verifique se você possui as seguintes ferramentas ins
 Primeiro, clone este repositório para sua máquina local:
 
 ```bash
-git clone https://github.com/seu-usuario/projeto-desafio-tecnico.git
+git clone https://github.com/jinzup/projeto-desafio-tecnico.git
