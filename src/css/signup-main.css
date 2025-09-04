@@ -1,4 +1,4 @@
-.login-container {
+.signup-container {
     width: 320px;
     padding: 25px;
     background: linear-gradient(135deg, #213bad, #2a5298);
@@ -14,7 +14,6 @@ h2 {
     margin-bottom: 20px;
     font-family: 'Arial', sans-serif;
 }
-
 form {
     width: 250px;
 }
@@ -32,20 +31,19 @@ label {
 
 input {
     width: 230px;
-    padding: 12px;
+    padding: 10px;
     border-radius: 8px;
     border: none;
     margin-top: 5px;
     background-color: #f1f1f1;
     color: #333;
-    display: flex;
     justify-self: center;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #002470;
+    background-color: #4CAF50;
     color: white;
     font-size: 16px;
     border-radius: 8px;
@@ -59,22 +57,29 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Estilos de erro e sucesso */
 .error {
     color: red;
     font-size: 14px;
     margin-bottom: 15px;
 }
 
-.signup-link {
+.success {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.login-link {
     margin-top: 20px;
     font-size: 14px;
 }
 
-.signup-link a {
+.login-link a {
     color: #4CAF50;
     text-decoration: none;
 }
 
-.signup-link a:hover {
+.login-link a:hover {
     text-decoration: underline;
 }

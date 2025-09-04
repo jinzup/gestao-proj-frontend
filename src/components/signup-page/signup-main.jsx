@@ -1,29 +1,45 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';  // Link para navegação
-import '../../css/login-main.css';  // Estilos para Login
+import { Link } from 'react-router-dom'; 
+import '../../css/signup-main.css';
 
-const Login = () => {
+const Signup = () => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!email || !password) {
+    if (!name || !email || !password) {
       setError('Por favor, preencha todos os campos!');
       return;
     }
 
-    console.log('Login realizado com sucesso!');
     setError('');
+    setSuccess('Cadastro realizado com sucesso!');
+    setName('');
+    setEmail('');
+    setPassword('');
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
+    <div className="signup-container">
+      <h2>Cadastro</h2>
       {error && <div className="error">{error}</div>}
+      {success && <div className="success">{success}</div>}
       <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="name">Nome</label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </div>
         <div className="form-group">
           <label htmlFor="email">E-mail</label>
           <input
@@ -44,15 +60,14 @@ const Login = () => {
             required
           />
         </div>
-        <button type="submit">Entrar</button>
+        <button type="submit">Cadastrar</button>
       </form>
 
-      {/* Link para ir para a página de Cadastro */}
-      <div className="signup-link">
-        <p>Não tem uma conta? <Link to="/signup">Cadastre-se</Link></p>
+      <div className="login-link">
+        <p>Já tem uma conta? <Link to="/">Voltar para o Login</Link></p>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Signup;
